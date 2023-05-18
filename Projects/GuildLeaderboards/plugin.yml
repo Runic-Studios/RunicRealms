@@ -1,9 +1,0 @@
-name: RunicGuildLeaderboards
-description: Displays Top Guilds Holograms, by Excel
-version: 1.0
-softdepend: [Guilds, HolographicDisplays]
-main: com.runicrealms.runicguildleaderboards.Plugin
-commands:
-  leaderboard:
-    description: Allows you to display the leaderboards using a hologram
-    aliases: [lb, leaderboards]
