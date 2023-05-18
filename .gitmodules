@@ -43,9 +43,6 @@
 [submodule "Projects/Bank"]
 	path = Projects/Bank
 	url = https://gitlab.com/runicrealms/runicbank
-[submodule "Projects/BlackMarket"]
-	path = Projects/BlackMarket
-	url = https://gitlab.com/runicrealms/runicblackmarket
 [submodule "Projects/PlayerShops"]
 	path = Projects/PlayerShops
 	url = https://gitlab.com/runicrealms/runicplayershops
@@ -55,3 +52,6 @@
 [submodule "Projects/Restart"]
 	path = Projects/Restart
 	url = https://gitlab.com/runicrealms/runicrestart
+[submodule "Projects/Core"]
+	path = Projects/Core
+	url = https://gitlab.com/runicrealms/ftrcoremaven
