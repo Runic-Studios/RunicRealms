@@ -1,6 +1,57 @@
-[submodule "Projects/RunicPlayerShops"]
-	path = Projects/RunicPlayerShops
+[submodule "Projects/FilePull"]
+	path = Projects/FilePull
+	url = https://gitlab.com/runicrealms/runicfilepull
+[submodule "Projects/Groups"]
+	path = Projects/Groups
+	url = https://gitlab.com/runicrealms/runicgroups
+[submodule "Projects/GuildLeaderboards"]
+	path = Projects/GuildLeaderboards
+	url = https://gitlab.com/runicrealms/runicguildleaderboards
+[submodule "Projects/Guilds"]
+	path = Projects/Guilds
+	url = https://gitlab.com/runicrealms/runicguilds
+[submodule "Projects/Items"]
+	path = Projects/Items
+	url = https://gitlab.com/runicrealms/runicitems
+[submodule "Projects/Mounts"]
+	path = Projects/Mounts
+	url = https://gitlab.com/runicrealms/runicmounts
+[submodule "Projects/Npcs"]
+	path = Projects/Npcs
+	url = https://gitlab.com/runicrealms/runicnpcs
+[submodule "Projects/PvP"]
+	path = Projects/PvP
+	url = https://gitlab.com/runicrealms/runicpvp
+[submodule "Projects/Quests"]
+	path = Projects/Quests
+	url = https://gitlab.com/runicrealms/runicquests
+[submodule "Projects/Reputation"]
+	path = Projects/Reputation
+	url = https://gitlab.com/runicrealms/runicreputation
+[submodule "Projects/SkillCheck"]
+	path = Projects/SkillCheck
+	url = https://gitlab.com/runicrealms/runicskillcheck
+[submodule "Projects/Chat"]
+	path = Projects/Chat
+	url = https://gitlab.com/runicrealms/runicchat
+[submodule "Projects/Achievements"]
+	path = Projects/Achievements
+	url = https://gitlab.com/runicrealms/runicachievements
+[submodule "Projects/Artifacts"]
+	path = Projects/Artifacts
+	url = https://gitlab.com/runicrealms/runicartifacts
+[submodule "Projects/Bank"]
+	path = Projects/Bank
+	url = https://gitlab.com/runicrealms/runicbank
+[submodule "Projects/BlackMarket"]
+	path = Projects/BlackMarket
+	url = https://gitlab.com/runicrealms/runicblackmarket
+[submodule "Projects/PlayerShops"]
+	path = Projects/PlayerShops
 	url = https://gitlab.com/runicrealms/runicplayershops
-[submodule "Projects/RunicProfessions"]
-	path = Projects/RunicProfessions
+[submodule "Projects/Professions"]
+	path = Projects/Professions
 	url = https://gitlab.com/runicrealms/runicprofessions
+[submodule "Projects/Restart"]
+	path = Projects/Restart
+	url = https://gitlab.com/runicrealms/runicrestart
