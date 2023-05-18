@@ -1,0 +1,6 @@
+[submodule "Projects/RunicPlayerShops"]
+	path = Projects/RunicPlayerShops
+	url = https://gitlab.com/runicrealms/runicplayershops
+[submodule "Projects/RunicProfessions"]
+	path = Projects/RunicProfessions
+	url = https://gitlab.com/runicrealms/runicprofessions
