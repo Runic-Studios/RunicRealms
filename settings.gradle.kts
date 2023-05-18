@@ -65,3 +65,30 @@ include("Projects:Core")
 findProject(":Projects:Core")?.name = "Core"
 include("Projects:FilePull")
 findProject(":Projects:FilePull")?.name = "FilePull"
+include("Projects:Groups")
+findProject(":Projects:Groups")?.name = "Groups"
+include("Projects:GuildLeaderboards")
+findProject(":Projects:GuildLeaderboards")?.name = "GuildLeaderboards"
+include("Projects:Guilds")
+findProject(":Projects:Guilds")?.name = "Guilds"
+include("Projects:Items")
+findProject(":Projects:Items")?.name = "Items"
+include("Projects:Mounts")
+findProject(":Projects:Mounts")?.name = "Mounts"
+include("Projects:Npcs")
+findProject(":Projects:Npcs")?.name = "Npcs"
+include("Projects:PlayerShops")
+findProject(":Projects:PlayerShops")?.name = "PlayerShops"
+include("Projects:Professions")
+findProject(":Projects:Professions")?.name = "Professions"
+include("Projects:PvP")
+findProject(":Projects:PvP")?.name = "PvP"
+include("Projects:Quests")
+findProject(":Projects:Quests")?.name = "Quests"
+include("Projects:Reputation")
+findProject(":Projects:Reputation")?.name = "Reputation"
+include("Projects:Restart")
+findProject(":Projects:Restart")?.name = "Restart"
+include("Projects:SkillCheck")
+findProject(":Projects:SkillCheck")?.name = "SkillCheck"
+
