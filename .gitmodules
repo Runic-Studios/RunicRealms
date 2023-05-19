@@ -22,9 +22,6 @@
 [submodule "Projects/Quests"]
 	path = Projects/Quests
 	url = https://gitlab.com/runicrealms/runicquests
-[submodule "Projects/SkillCheck"]
-	path = Projects/SkillCheck
-	url = https://gitlab.com/runicrealms/runicskillcheck
 [submodule "Projects/Chat"]
 	path = Projects/Chat
 	url = https://gitlab.com/runicrealms/runicchat
