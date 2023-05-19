@@ -1,9 +1,6 @@
 [submodule "Projects/FilePull"]
 	path = Projects/FilePull
 	url = https://gitlab.com/runicrealms/runicfilepull
-[submodule "Projects/Groups"]
-	path = Projects/Groups
-	url = https://gitlab.com/runicrealms/runicgroups
 [submodule "Projects/GuildLeaderboards"]
 	path = Projects/GuildLeaderboards
 	url = https://gitlab.com/runicrealms/runicguildleaderboards
@@ -25,9 +22,6 @@
 [submodule "Projects/Quests"]
 	path = Projects/Quests
 	url = https://gitlab.com/runicrealms/runicquests
-[submodule "Projects/Reputation"]
-	path = Projects/Reputation
-	url = https://gitlab.com/runicrealms/runicreputation
 [submodule "Projects/SkillCheck"]
 	path = Projects/SkillCheck
 	url = https://gitlab.com/runicrealms/runicskillcheck
