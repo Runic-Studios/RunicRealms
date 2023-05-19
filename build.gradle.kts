@@ -25,7 +25,3 @@ subprojects {
         mavenCentral()
     }
 }
-
-fun getLibsDirRelative() {
-
-}
