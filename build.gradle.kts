@@ -2,30 +2,30 @@ group = "com.runicrealms"
 
 val rootFolder = rootProject.buildDir
 allprojects {
-//    println("allproject name: " + this.name)
-//    println("allproject subprojects: " + this.childProjects.entries)
     buildDir = (parent?.buildDir ?: rootFolder).resolve(name)
-//    if (this.name == "Projects") {
-//        this.childProjects.entries.forEach {
-//            println("SETTING VERSION FOR: " + it.key)
-//            //it.value.tasks.create("wrapper")
-///*            it.value.tasks.wrapper {
-//                gradleVersion = "7.6.1"
-//            }*/
-//        }
-//    }
-
 }
 
-//subprojects {
-//    println("NAME: " + this.name)
-//    buildDir = (parent?.buildDir ?: rootFolder).resolve(name)
-//    tasks.wrapper {
-//        gradleVersion = "7.6.1"
-//    }
-//}
+subprojects {
+    repositories {
+        maven("https://repo.aikar.co/content/groups/aikar/")
+        maven("https://repo.papermc.io/repository/maven-public/")
+        maven("https://repo.dmulloy2.net/nexus/repository/public/")
+        maven("https://repo.aikar.co/content/groups/aikar/")
+        maven("https://maven.enginehub.org/repo/")
+        maven("https://oss.sonatype.org/content/groups/public/")
+        maven("https://repo.destroystokyo.com/repository/maven-public/")
+        maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
+        maven("https://jitpack.io")
+        maven("https://repo.codemc.io/repository/maven-public/")
+        maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+        maven("https://jcenter.bintray.com")
+        val file = File(rootProject.projectDir, "libs").relativeTo(projectDir)
+        flatDir { dirs(file.path) }
+        mavenLocal()
+        mavenCentral()
+    }
+}
 
-//subprojects {
-//    println(this.name)
-//    if (this.childProjects.)
-//}
+fun getLibsDirRelative() {
+
+}

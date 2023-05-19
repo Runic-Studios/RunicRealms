@@ -55,3 +55,6 @@
 [submodule "Projects/Core"]
 	path = Projects/Core
 	url = https://gitlab.com/runicrealms/ftrcoremaven
+[submodule "Projects/Common"]
+	path = Projects/Common
+	url = https://gitlab.com/runicrealms/runiccommon

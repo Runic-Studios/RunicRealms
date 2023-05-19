@@ -12,16 +12,27 @@ pluginManagement {
 dependencyResolutionManagement {
     versionCatalogs {
         create("commonLibs") {
-            library("paper", "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
-            library("spigot", "org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
+            // RunicCommon dependencies (shadowed):
             library("jedis", "redis.clients:jedis:4.2.3")
             library("acf", "co.aikar:acf-paper:0.5.0-SNAPSHOT")
             library("taskchain", "co.aikar:taskchain-bukkit:3.7.2")
             library("springdatamongodb", "org.springframework.data:spring-data-mongodb:3.4.0")
             library("mongodbdriversync", "org.mongodb:mongodb-driver-sync:4.6.1")
             library("mongodbdrivercore", "org.mongodb:mongodb-driver-core:4.6.1")
-            library("placeholderapi", "me.clip:placeholderapi:2.10.3")
             library("configme", "ch.jalu:configme:1.1.0")
+            library("apachecommonslang", "org.apache.commons:commons-lang3:3.12.0")
+            library("apachecommonsmath", "org.apache.commons:commons-math3:3.6.1")
+            library("apachecommonspool", "org.apache.commons:commons-pool2:2.11.1")
+            library("httpclient", "org.apache.httpcomponents:httpclient:4.5.14")
+            library("commonsio", "commons-io:commons-io:2.11.0")
+            library("spark", "com.sparkjava:spark-core:2.9.4")
+            library("menus", "com.gmail.excel8392:menus:1.0")
+            library("jda", "net.dv8tion:JDA:4.2.0_229")
+
+            // Plugin dependencies (provided):
+            library("paper", "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
+            library("spigot", "org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
+            library("placeholderapi", "me.clip:placeholderapi:2.10.3")
             library("mythicmobs", "net.elseland.xikage:mythicmobs:4.12.0")
             library("craftbukkit", "org.bukkit:craftbukkit:1.16.5")
             library("worldguardevents", "net.raidstone:WorldGuardEvents:1.18.1")
@@ -36,22 +47,6 @@ dependencyResolutionManagement {
             library("protocollib", "com.comphenix.protocol:ProtocolLib:4.5.0")
         }
     }
-    with (repositories) {
-        maven("https://repo.aikar.co/content/groups/aikar/")
-        maven("https://repo.papermc.io/repository/maven-public/")
-        maven("https://repo.dmulloy2.net/nexus/repository/public/")
-        maven("https://repo.aikar.co/content/groups/aikar/")
-        maven("https://maven.enginehub.org/repo/")
-        maven("https://oss.sonatype.org/content/groups/public/")
-        maven("https://repo.destroystokyo.com/repository/maven-public/")
-        maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
-        maven("https://jitpack.io")
-        maven("https://repo.codemc.io/repository/maven-public/")
-        maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-        flatDir { dirs("libs") }
-        mavenLocal()
-        mavenCentral()
-    }
 }
 include("Projects:Achievements")
 findProject(":Projects:Achievements")?.name = "Achievements"
@@ -61,6 +56,8 @@ include("Projects:Bank")
 findProject(":Projects:Bank")?.name = "Bank"
 include("Projects:Chat")
 findProject(":Projects:Chat")?.name = "Chat"
+include("Projects:Common")
+findProject(":Projects:Common")?.name = "Common"
 include("Projects:Core")
 findProject(":Projects:Core")?.name = "Core"
 include("Projects:FilePull")
@@ -91,4 +88,3 @@ include("Projects:Restart")
 findProject(":Projects:Restart")?.name = "Restart"
 include("Projects:SkillCheck")
 findProject(":Projects:SkillCheck")?.name = "SkillCheck"
-
