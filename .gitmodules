@@ -37,9 +37,6 @@
 [submodule "Projects/Achievements"]
 	path = Projects/Achievements
 	url = https://gitlab.com/runicrealms/runicachievements
-[submodule "Projects/Artifacts"]
-	path = Projects/Artifacts
-	url = https://gitlab.com/runicrealms/runicartifacts
 [submodule "Projects/Bank"]
 	path = Projects/Bank
 	url = https://gitlab.com/runicrealms/runicbank

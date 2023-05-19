@@ -50,8 +50,6 @@ dependencyResolutionManagement {
 }
 include("Projects:Achievements")
 findProject(":Projects:Achievements")?.name = "Achievements"
-include("Projects:Artifacts")
-findProject(":Projects:Artifacts")?.name = "Artifacts"
 include("Projects:Bank")
 findProject(":Projects:Bank")?.name = "Bank"
 include("Projects:Chat")
