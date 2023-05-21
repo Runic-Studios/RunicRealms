@@ -84,7 +84,5 @@ include("Projects:Reputation")
 findProject(":Projects:Reputation")?.name = "Reputation"
 include("Projects:Restart")
 findProject(":Projects:Restart")?.name = "Restart"
-include("Projects:SkillCheck")
-findProject(":Projects:SkillCheck")?.name = "SkillCheck"
 include("Projects:Database")
 findProject(":Projects:Database")?.name = "Database"
