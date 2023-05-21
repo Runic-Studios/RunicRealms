@@ -86,3 +86,5 @@ include("Projects:Restart")
 findProject(":Projects:Restart")?.name = "Restart"
 include("Projects:SkillCheck")
 findProject(":Projects:SkillCheck")?.name = "SkillCheck"
+include("Projects:Database")
+findProject(":Projects:Database")?.name = "Database"

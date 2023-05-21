@@ -6,6 +6,15 @@ allprojects {
 }
 
 subprojects {
+    tasks.withType<JavaCompile> {
+        options.encoding = "UTF-8"
+    }
+    configurations.all {
+        resolutionStrategy {
+            force("org.apache.commons:commons-pool2:2.11.1")
+            force("redis.clients:jedis:4.2.3")
+        }
+    }
     repositories {
         maven("https://repo.aikar.co/content/groups/aikar/")
         maven("https://repo.papermc.io/repository/maven-public/")
