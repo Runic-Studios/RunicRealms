@@ -49,3 +49,6 @@
 [submodule "Projects/Database"]
 	path = Projects/Database
 	url = https://gitlab.com/runicrealms/runicdatabase
+[submodule "Projects/Doors"]
+	path = Projects/Doors
+	url = https://gitlab.com/runicrealms/runic-doors
