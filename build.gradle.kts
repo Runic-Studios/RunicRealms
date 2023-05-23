@@ -33,6 +33,12 @@ subprojects {
     }
     afterEvaluate {
         val hasShadowJar = tasks.findByName("shadowJar") != null
+        if (hasShadowJar) {
+            tasks.getByName("build").dependsOn("shadowJar")
+            val buildOutputOriginal = File(buildDir, "libs")
+            val containsFile = buildOutputOriginal.listFiles()?.any { it.name.contains("-all.jar") } ?: false
+            if (!containsFile) return@afterEvaluate
+        }
         val execute: (Task) -> Unit = {
             with(it) {
                 val buildFile = outputs.files.files.first()
