@@ -31,16 +31,6 @@ subprojects {
             mavenCentral()
         }
     }
-
-    //tasks.findByName("build") ?: return@subprojects
-    /*println(tasks.findByName("shadowJar") != null)
-    val hasShadowJar = try {
-        tasks.findByName("shadowJar")
-        true
-    } catch (exception: UnknownTaskException) {
-        false
-    }*/
-//    evalu
     afterEvaluate {
         val hasShadowJar = tasks.findByName("shadowJar") != null
         val execute: (Task) -> Unit = {
@@ -65,5 +55,5 @@ subprojects {
             }
         }
     }
-    
+
 }
