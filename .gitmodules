@@ -28,9 +28,6 @@
 [submodule "Projects/Bank"]
 	path = Projects/Bank
 	url = https://gitlab.com/runicrealms/runicbank
-[submodule "Projects/PlayerShops"]
-	path = Projects/PlayerShops
-	url = https://gitlab.com/runicrealms/runicplayershops
 [submodule "Projects/Professions"]
 	path = Projects/Professions
 	url = https://gitlab.com/runicrealms/runicprofessions

@@ -70,8 +70,6 @@ include("Projects:Mounts")
 findProject(":Projects:Mounts")?.name = "Mounts"
 include("Projects:Npcs")
 findProject(":Projects:Npcs")?.name = "Npcs"
-include("Projects:PlayerShops")
-findProject(":Projects:PlayerShops")?.name = "PlayerShops"
 include("Projects:Professions")
 findProject(":Projects:Professions")?.name = "Professions"
 include("Projects:PvP")
