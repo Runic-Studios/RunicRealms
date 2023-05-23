@@ -1,64 +1,64 @@
 [submodule "Projects/FilePull"]
 	path = Projects/FilePull
-	url = https://gitlab.com/runicrealms/runicfilepull
+	url = https://github.com/runic-studios/runicfilepull
 	branch = master
 [submodule "Projects/Guilds"]
 	path = Projects/Guilds
-	url = https://gitlab.com/runicrealms/runicguilds
+	url = https://github.com/runic-studios/runicguilds
 	branch = gradle-update-rr-347
 [submodule "Projects/Items"]
 	path = Projects/Items
-	url = https://gitlab.com/runicrealms/runicitems
+	url = https://github.com/runic-studios/runicitems
 	branch = gradle-update
 [submodule "Projects/Mounts"]
 	path = Projects/Mounts
-	url = https://gitlab.com/runicrealms/runicmounts
+	url = https://github.com/runic-studios/runicmounts
 	branch = gradle-update
 [submodule "Projects/Npcs"]
 	path = Projects/Npcs
-	url = https://gitlab.com/runicrealms/runicnpcs
+	url = https://github.com/runic-studios/runicnpcs
 	branch = gradle-update
 [submodule "Projects/PvP"]
 	path = Projects/PvP
-	url = https://gitlab.com/runicrealms/runicpvp
+	url = https://github.com/runic-studios/runicpvp
 	branch = gradle-update
 [submodule "Projects/Quests"]
 	path = Projects/Quests
-	url = https://gitlab.com/runicrealms/runicquests
+	url = https://github.com/runic-studios/runicquests
 	branch = gradle-update
 [submodule "Projects/Chat"]
 	path = Projects/Chat
-	url = https://gitlab.com/runicrealms/runicchat
+	url = https://github.com/runic-studios/runicchat
 	branch = master
 [submodule "Projects/Achievements"]
 	path = Projects/Achievements
-	url = https://gitlab.com/runicrealms/runicachievements
+	url = https://github.com/runic-studios/runicachievements
 	branch = gradle-update
 [submodule "Projects/Bank"]
 	path = Projects/Bank
-	url = https://gitlab.com/runicrealms/runicbank
+	url = https://github.com/runic-studios/runicbank
 	branch = gradle-update
 [submodule "Projects/Professions"]
 	path = Projects/Professions
-	url = https://gitlab.com/runicrealms/runicprofessions
+	url = https://github.com/runic-studios/runicprofessions
 	branch = gradle-update
 [submodule "Projects/Restart"]
 	path = Projects/Restart
-	url = https://gitlab.com/runicrealms/runicrestart
+	url = https://github.com/runic-studios/runicrestart
 	branch = gradle-update
 [submodule "Projects/Core"]
 	path = Projects/Core
-	url = https://gitlab.com/runicrealms/ftrcoremaven
+	url = https://github.com/runic-studios/runiccore
 	branch = gradle-update
 [submodule "Projects/Common"]
 	path = Projects/Common
-	url = https://gitlab.com/runicrealms/runiccommon
+	url = https://github.com/runic-studios/runiccommon
 	branch = master
 [submodule "Projects/Database"]
 	path = Projects/Database
-	url = https://gitlab.com/runicrealms/runicdatabase
+	url = https://github.com/runic-studios/runicdatabase
 	branch = master
 [submodule "Projects/Doors"]
 	path = Projects/Doors
-	url = https://gitlab.com/runicrealms/runic-doors
+	url = https://github.com/runic-studios/runicdoors
 	branch = gradle-update
