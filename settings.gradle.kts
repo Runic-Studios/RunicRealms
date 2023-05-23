@@ -48,6 +48,7 @@ dependencyResolutionManagement {
         }
     }
 }
+
 include("Projects:Achievements")
 findProject(":Projects:Achievements")?.name = "Achievements"
 include("Projects:Bank")

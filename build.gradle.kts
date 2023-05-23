@@ -1,9 +1,15 @@
-group = "com.runicrealms"
+import org.gradle.configurationcache.extensions.capitalized
 
-val rootFolder = rootProject.buildDir
+group = "com.runicrealms.plugin"
+
+val rootFolder: File = rootProject.buildDir
 allprojects {
     buildDir = (parent?.buildDir ?: rootFolder).resolve(name)
 }
+
+val rrGroup by extra { "com.runicrealms.plugin" }
+val rrVersion by extra { "2.0.0" }
+val mcVersion by extra { "1.16.5" }
 
 subprojects {
     beforeEvaluate {
@@ -31,35 +37,29 @@ subprojects {
             mavenCentral()
         }
     }
+    // Custom script to copy build files to output folder
     afterEvaluate {
         val hasShadowJar = tasks.findByName("shadowJar") != null
-        if (hasShadowJar) {
-            tasks.getByName("build").dependsOn("shadowJar")
-            val buildOutputOriginal = File(buildDir, "libs")
-            val containsFile = buildOutputOriginal.listFiles()?.any { it.name.contains("-all.jar") } ?: false
-            if (!containsFile) return@afterEvaluate
+        if (hasShadowJar) tasks.getByName("build").dependsOn("shadowJar")
+        var buildOutputs: TaskOutputs? = null
+        val execute: (TaskOutputs) -> Unit = execute@{
+            val buildFile = it.files.files.first()
+            if (hasShadowJar && !buildFile.name.contains("-all.jar")) return@execute // Don't copy non-shadowJar
+            val name = "Runic${name.lowercase().capitalized()}-$mcVersion-$rrVersion.jar"
+            val location = File(rootProject.projectDir, "output/$name")
+            it.files.files.first().copyTo(location, overwrite = true)
         }
-        val execute: (Task) -> Unit = {
-            with(it) {
-                val buildFile = outputs.files.files.first()
-                if (hasShadowJar && !buildFile.name.contains("-all.jar")) return@with // Don't copy non-shadowJar
-                val name = if (!hasShadowJar) buildFile.name else buildFile.name.replace(
-                    "-all.jar",
-                    ""
-                ) + ".jar" // Change shadowJar name to be normal
-                val location = File(rootProject.projectDir, "output/$name")
-                outputs.files.files.first().copyTo(location, overwrite = true)
-            }
+
+        if (hasShadowJar) tasks.named("shadowJar") { buildOutputs = outputs }
+        else tasks.withType<Jar> { buildOutputs = outputs }
+
+        tasks.register("buildCopy") {
+            doLast { execute(buildOutputs!!) }
         }
-        if (hasShadowJar) {
-            tasks.named("shadowJar") {
-                execute(this)
-            }
-        } else {
-            tasks.withType<Jar> {
-                execute(this)
-            }
-        }
+
+        if (hasShadowJar) tasks.getByName("shadowJar").finalizedBy("buildCopy")
+        else tasks.withType<Jar> { finalizedBy("buildCopy") }
     }
 
 }
+
