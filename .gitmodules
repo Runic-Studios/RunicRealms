@@ -1,48 +1,64 @@
 [submodule "Projects/FilePull"]
 	path = Projects/FilePull
 	url = https://gitlab.com/runicrealms/runicfilepull
+	branch = master
 [submodule "Projects/Guilds"]
 	path = Projects/Guilds
 	url = https://gitlab.com/runicrealms/runicguilds
+	branch = gradle-update-rr-347
 [submodule "Projects/Items"]
 	path = Projects/Items
 	url = https://gitlab.com/runicrealms/runicitems
+	branch = gradle-update
 [submodule "Projects/Mounts"]
 	path = Projects/Mounts
 	url = https://gitlab.com/runicrealms/runicmounts
+	branch = gradle-update
 [submodule "Projects/Npcs"]
 	path = Projects/Npcs
 	url = https://gitlab.com/runicrealms/runicnpcs
+	branch = gradle-update
 [submodule "Projects/PvP"]
 	path = Projects/PvP
 	url = https://gitlab.com/runicrealms/runicpvp
+	branch = gradle-update
 [submodule "Projects/Quests"]
 	path = Projects/Quests
 	url = https://gitlab.com/runicrealms/runicquests
+	branch = gradle-update
 [submodule "Projects/Chat"]
 	path = Projects/Chat
 	url = https://gitlab.com/runicrealms/runicchat
+	branch = master
 [submodule "Projects/Achievements"]
 	path = Projects/Achievements
 	url = https://gitlab.com/runicrealms/runicachievements
+	branch = gradle-update
 [submodule "Projects/Bank"]
 	path = Projects/Bank
 	url = https://gitlab.com/runicrealms/runicbank
+	branch = gradle-update
 [submodule "Projects/Professions"]
 	path = Projects/Professions
 	url = https://gitlab.com/runicrealms/runicprofessions
+	branch = gradle-update
 [submodule "Projects/Restart"]
 	path = Projects/Restart
 	url = https://gitlab.com/runicrealms/runicrestart
+	branch = gradle-update
 [submodule "Projects/Core"]
 	path = Projects/Core
 	url = https://gitlab.com/runicrealms/ftrcoremaven
+	branch = gradle-update
 [submodule "Projects/Common"]
 	path = Projects/Common
 	url = https://gitlab.com/runicrealms/runiccommon
+	branch = master
 [submodule "Projects/Database"]
 	path = Projects/Database
 	url = https://gitlab.com/runicrealms/runicdatabase
+	branch = master
 [submodule "Projects/Doors"]
 	path = Projects/Doors
 	url = https://gitlab.com/runicrealms/runic-doors
+	branch = gradle-update
