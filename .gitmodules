@@ -1,9 +1,6 @@
 [submodule "Projects/FilePull"]
 	path = Projects/FilePull
 	url = https://gitlab.com/runicrealms/runicfilepull
-[submodule "Projects/GuildLeaderboards"]
-	path = Projects/GuildLeaderboards
-	url = https://gitlab.com/runicrealms/runicguildleaderboards
 [submodule "Projects/Guilds"]
 	path = Projects/Guilds
 	url = https://gitlab.com/runicrealms/runicguilds

@@ -62,8 +62,6 @@ include("Projects:FilePull")
 findProject(":Projects:FilePull")?.name = "FilePull"
 include("Projects:Groups")
 findProject(":Projects:Groups")?.name = "Groups"
-include("Projects:GuildLeaderboards")
-findProject(":Projects:GuildLeaderboards")?.name = "GuildLeaderboards"
 include("Projects:Guilds")
 findProject(":Projects:Guilds")?.name = "Guilds"
 include("Projects:Items")
