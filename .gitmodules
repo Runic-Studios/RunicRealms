@@ -5,7 +5,7 @@
 [submodule "Projects/Guilds"]
 	path = Projects/Guilds
 	url = https://github.com/runic-studios/runicguilds
-	branch = master-rr-347
+	branch = gradle-update-rr-347
 [submodule "Projects/Items"]
 	path = Projects/Items
 	url = https://github.com/runic-studios/runicitems
