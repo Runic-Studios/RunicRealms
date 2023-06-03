@@ -45,6 +45,7 @@ dependencyResolutionManagement {
             library("tabbed", "com.github.thekeenant:tabbed:v1.8")
             library("viaversion", "com.github.MylesIsCool.ViaVersion:viaversion:3.2.0")
             library("protocollib", "com.comphenix.protocol:ProtocolLib:4.5.0")
+            library("luckperms", "net.luckperms:api:5.4")
         }
     }
 }
