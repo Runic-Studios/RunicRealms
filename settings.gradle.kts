@@ -28,6 +28,8 @@ dependencyResolutionManagement {
             library("spark", "com.sparkjava:spark-core:2.9.4")
             library("menus", "com.gmail.excel8392:menus:1.0")
             library("jda", "net.dv8tion:JDA:4.2.0_229")
+            library("log4japi", "org.apache.logging.log4j:log4j-api:2.20.0")
+            library("log4jcore", "org.apache.logging.log4j:log4j-core:2.20.0")
 
             // Plugin dependencies (provided):
             library("paper", "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
