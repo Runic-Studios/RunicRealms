@@ -8,7 +8,7 @@ allprojects {
 }
 
 val rrGroup by extra { "com.runicrealms.plugin" }
-val rrVersion by extra { "2.0.3" }
+val rrVersion by extra { "2.0.4" }
 val mcVersion by extra { "1.16.5" }
 
 subprojects {
