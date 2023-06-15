@@ -8,8 +8,8 @@ allprojects {
 }
 
 val rrGroup by extra { "com.runicrealms.plugin" }
-val rrVersion by extra { "2.0.2" }
-val mcVersion by extra { "1.16.5" }
+val rrVersion by extra { "2.1.0" }
+val mcVersion by extra { "1.19.4" }
 
 subprojects {
     beforeEvaluate {
@@ -31,6 +31,7 @@ subprojects {
             maven("https://repo.codemc.io/repository/maven-public/")
             maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
             maven("https://jcenter.bintray.com")
+            maven("https://repo.viaversion.com")
             val file = File(rootProject.projectDir, "libs").relativeTo(projectDir)
             flatDir { dirs(file.path) }
             mavenLocal()
