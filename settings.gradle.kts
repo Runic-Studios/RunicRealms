@@ -14,7 +14,7 @@ dependencyResolutionManagement {
         create("commonLibs") {
             // RunicCommon dependencies (shadowed):
             library("jedis", "redis.clients:jedis:4.2.3")
-            library("acf", "co.aikar:acf-paper:0.5.0-SNAPSHOT")
+            library("acf", "co.aikar:acf-paper:0.5.1-SNAPSHOT")
             library("taskchain", "co.aikar:taskchain-bukkit:3.7.2")
             library("springdatamongodb", "org.springframework.data:spring-data-mongodb:3.4.0")
             library("mongodbdriversync", "org.mongodb:mongodb-driver-sync:4.6.1")
@@ -27,7 +27,6 @@ dependencyResolutionManagement {
             library("commonsio", "commons-io:commons-io:2.11.0")
             library("spark", "com.sparkjava:spark-core:2.9.4")
             library("menus", "com.gmail.excel8392:menus:1.0")
-            library("jda", "net.dv8tion:JDA:4.2.0_229")
             library("log4japi", "org.apache.logging.log4j:log4j-api:2.20.0")
             library("log4jcore", "org.apache.logging.log4j:log4j-core:2.20.0")
 
