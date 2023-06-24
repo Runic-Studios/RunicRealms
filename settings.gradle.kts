@@ -14,7 +14,7 @@ dependencyResolutionManagement {
         create("commonLibs") {
             // RunicCommon dependencies (shadowed):
             library("jedis", "redis.clients:jedis:4.2.3")
-            library("acf", "co.aikar:acf-paper:0.5.0-SNAPSHOT")
+            library("acf", "co.aikar:acf-paper:0.5.1-SNAPSHOT")
             library("taskchain", "co.aikar:taskchain-bukkit:3.7.2")
             library("springdatamongodb", "org.springframework.data:spring-data-mongodb:3.4.0")
             library("mongodbdriversync", "org.mongodb:mongodb-driver-sync:4.6.1")
@@ -31,21 +31,21 @@ dependencyResolutionManagement {
             library("log4jcore", "org.apache.logging.log4j:log4j-core:2.20.0")
 
             // Plugin dependencies (provided):
-            library("paper", "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
-            library("spigot", "org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
-            library("placeholderapi", "me.clip:placeholderapi:2.10.3")
-            library("mythicmobs", "net.elseland.xikage:mythicmobs:4.12.0")
-            library("craftbukkit", "org.bukkit:craftbukkit:1.16.5")
+            library("paper", "io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
+            library("spigot", "org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT")
+            library("placeholderapi", "me.clip:placeholderapi:2.11.3")
+            library("mythicmobs", "net.elseland.xikage:mythicmobs:5.2.6")
+            //library("craftbukkit", "org.bukkit:craftbukkit:1.19.4")
             library("worldguardevents", "net.raidstone:WorldGuardEvents:1.18.1")
             library("armorequip", "com.github.Arnuh:ArmorEquipEvent:1.7.1")
             library("worldguardcore", "com.sk89q.worldguard:worldguard-core:7.0.0-SNAPSHOT")
             library("worldguardlegacy", "com.sk89q.worldguard:worldguard-legacy:7.0.0-SNAPSHOT")
-            library("holographicdisplays", "com.gmail.filoghost.holographicdisplays:holographicdisplays-api:2.4.0")
-            library("nametagedit", "com.github.sgtcaze:NametagEdit:master-6a2acbd995-1")
-            library("nbtapi", "dr.tr7zw:item-nbt-api:2.7.1")
+            library("holographicdisplays", "me.filoghost.holographicdisplays:holographicdisplays-api:3.0.2")
+            library("nametagedit", "com.github.sgtcaze:NametagEdit:4.5.18")
+            library("nbtapi", "dr.tr7zw:item-nbt-api:2.11.3")
             library("tabbed", "com.github.thekeenant:tabbed:v1.8")
-            library("viaversion", "com.github.MylesIsCool.ViaVersion:viaversion:3.2.0")
-            library("protocollib", "com.comphenix.protocol:ProtocolLib:4.5.0")
+            library("viaversion", "com.viaversion:viaversion-api:4.7.0")
+            library("protocollib", "com.comphenix.protocol:ProtocolLib:5.0.0")
             library("luckperms", "net.luckperms:api:5.4")
         }
     }
@@ -63,8 +63,6 @@ include("Projects:Core")
 findProject(":Projects:Core")?.name = "Core"
 include("Projects:FilePull")
 findProject(":Projects:FilePull")?.name = "FilePull"
-include("Projects:Groups")
-findProject(":Projects:Groups")?.name = "Groups"
 include("Projects:Guilds")
 findProject(":Projects:Guilds")?.name = "Guilds"
 include("Projects:Items")
