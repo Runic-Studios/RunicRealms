@@ -85,3 +85,7 @@ include("Projects:Database")
 findProject(":Projects:Database")?.name = "Database"
 include("Projects:Doors")
 findProject(":Projects:Doors")?.name = "Doors"
+include("Projects:Tablist")
+findProject(":Projects:Tablist")?.name = "Tablist"
+include("Projects:Mod")
+findProject(":Projects:Mod")?.name = "Mod"

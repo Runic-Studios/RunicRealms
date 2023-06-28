@@ -62,3 +62,11 @@
 	path = Projects/Doors
 	url = https://github.com/runic-studios/runicdoors
 	branch = master
+[submodule "Projects/Mod"]
+	path = Projects/Mod
+	url = https://github.com/runic-studios/runicmod
+	branch = master
+[submodule "Projects/Tablist"]
+	path = Projects/Tablist
+	url = https://github.com/runic-studios/runictablist
+	branch = master
