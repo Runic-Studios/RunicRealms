@@ -8,7 +8,6 @@ pluginManagement {
     }
 }
 
-@Suppress("UnstableApiUsage")
 dependencyResolutionManagement {
     versionCatalogs {
         create("commonLibs") {
@@ -43,7 +42,6 @@ dependencyResolutionManagement {
             library("holographicdisplays", "me.filoghost.holographicdisplays:holographicdisplays-api:3.0.2")
             library("nametagedit", "com.github.sgtcaze:NametagEdit:4.5.18")
             library("nbtapi", "dr.tr7zw:item-nbt-api:2.11.3")
-            library("tabbed", "com.github.thekeenant:tabbed:v1.8")
             library("viaversion", "com.viaversion:viaversion-api:4.7.0")
             library("protocollib", "com.comphenix.protocol:ProtocolLib:5.0.0")
             library("luckperms", "net.luckperms:api:5.4")
