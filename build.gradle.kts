@@ -32,6 +32,7 @@ subprojects {
             maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
             maven("https://jcenter.bintray.com")
             maven("https://repo.viaversion.com")
+            maven("https://mvn.lumine.io/repository/maven-public/")
             val file = File(rootProject.projectDir, "libs").relativeTo(projectDir)
             flatDir { dirs(file.path) }
             mavenLocal()
