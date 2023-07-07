@@ -33,6 +33,7 @@ subprojects {
             maven("https://jcenter.bintray.com")
             maven("https://repo.viaversion.com")
             maven("https://mvn.lumine.io/repository/maven-public/")
+            maven("https://repo.eclipse.org/content/groups/releases/")
             val file = File(rootProject.projectDir, "libs").relativeTo(projectDir)
             flatDir { dirs(file.path) }
             mavenLocal()

@@ -28,6 +28,7 @@ dependencyResolutionManagement {
             library("menus", "com.gmail.excel8392:menus:1.0")
             library("log4japi", "org.apache.logging.log4j:log4j-api:2.20.0")
             library("log4jcore", "org.apache.logging.log4j:log4j-core:2.20.0")
+            library("jgit", "org.eclipse.jgit:org.eclipse.jgit:6.6.0.202305301015-r")
 
             // Plugin dependencies (provided):
             library("paper", "io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
