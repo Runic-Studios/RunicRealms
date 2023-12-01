@@ -2,9 +2,9 @@ rootProject.name = "RunicRealms"
 
 pluginManagement {
     plugins {
-        kotlin("jvm") version "1.7.21"
-        kotlin("kapt") version "1.7.21"
-        id("com.github.johnrengelman.shadow") version "7.1.2"
+        kotlin("jvm") version "1.9.20"
+        kotlin("kapt") version "1.9.20"
+        id("com.github.johnrengelman.shadow") version "8.1.1"
     }
 }
 
@@ -34,8 +34,7 @@ dependencyResolutionManagement {
             library("paper", "io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
             library("spigot", "org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT")
             library("placeholderapi", "me.clip:placeholderapi:2.11.3")
-            library("mythicmobs", "net.elseland.xikage:mythicmobs:5.2.6")
-            //library("craftbukkit", "org.bukkit:craftbukkit:1.19.4")
+            library("mythicmobs", "io.lumine:Mythic-Dist:5.3.1")
             library("worldguardevents", "net.raidstone:WorldGuardEvents:1.18.1")
             library("armorequip", "com.github.Arnuh:ArmorEquipEvent:1.7.1")
             library("worldguardcore", "com.sk89q.worldguard:worldguard-core:7.0.0-SNAPSHOT")
@@ -46,7 +45,7 @@ dependencyResolutionManagement {
             library("viaversion", "com.viaversion:viaversion-api:4.7.0")
             library("protocollib", "com.comphenix.protocol:ProtocolLib:5.0.0")
             library("luckperms", "net.luckperms:api:5.4")
-            library("modelengine", "com.ticxo.modelengine:api:R3.1.8")
+            library("modelengine", "com.ticxo.modelengine:api:R3.1.9")
         }
     }
 }
