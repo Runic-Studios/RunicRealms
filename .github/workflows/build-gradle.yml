@@ -10,7 +10,10 @@ jobs:
   gradle:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout Repository and Clone Submodules
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
     - name: Set up JDK 17 Corretto
       uses: actions/setup-java@v3
       with:
