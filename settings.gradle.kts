@@ -25,7 +25,6 @@ dependencyResolutionManagement {
             library("httpclient", "org.apache.httpcomponents:httpclient:4.5.14")
             library("commonsio", "commons-io:commons-io:2.11.0")
             library("spark", "com.sparkjava:spark-core:2.9.4")
-            library("menus", "com.gmail.excel8392:menus:1.0")
             library("log4japi", "org.apache.logging.log4j:log4j-api:2.20.0")
             library("log4jcore", "org.apache.logging.log4j:log4j-core:2.20.0")
             library("jgit", "org.eclipse.jgit:org.eclipse.jgit:6.6.0.202305301015-r")
