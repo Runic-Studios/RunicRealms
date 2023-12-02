@@ -15,6 +15,7 @@ jobs:
       with:
         ref: "2.1"
         submodules: recursive
+        token: "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" # Read-only token owned by RunicRealmsGithub for the whole org
     - name: Set up JDK 17 Corretto
       uses: actions/setup-java@v3
       with:
