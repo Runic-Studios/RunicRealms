@@ -1,7 +1,7 @@
 env:
   ref: "2.1" # This is the branch we use for all repos
 
-name: "Build Gradle $ref"
+name: "Build Gradle"
 on:
   push:
     branches: [ "$ref" ]
