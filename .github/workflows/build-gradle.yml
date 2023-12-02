@@ -1,9 +1,12 @@
-name: Build Gradle 2.1
+env:
+  ref: "2.1" # This is the branch we use for all repos
+
+name: "Build Gradle $ref"
 on:
   push:
-    branches: [ "2.1" ]
+    branches: [ "$ref" ]
   pull_request:
-    branches: [ "2.1" ]
+    branches: [ "$ref" ]
 permissions:
   contents: read
 jobs:
@@ -13,7 +16,7 @@ jobs:
     - name: Checkout Repository and Clone Submodules
       uses: actions/checkout@v4
       with:
-        ref: "2.1"
+        ref: "$ref"
         submodules: recursive
         token: "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" # Read-only token owned by RunicRealmsGithub for the whole org
     - name: Set up JDK 17 Corretto
