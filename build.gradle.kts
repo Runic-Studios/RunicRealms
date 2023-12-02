@@ -11,6 +11,10 @@ val rrGroup by extra { "com.runicrealms.plugin" }
 val rrVersion by extra { "2.1.0" }
 val mcVersion by extra { "1.19.4" }
 
+plugins {
+    java
+}
+
 subprojects {
     beforeEvaluate {
         tasks.withType<JavaCompile> {
