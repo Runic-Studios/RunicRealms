@@ -2,9 +2,9 @@ import org.gradle.configurationcache.extensions.capitalized
 
 group = "com.runicrealms.plugin"
 
-val rootFolder: File = rootProject.buildDir
+val rootFolder: File = rootProject.layout.buildDirectory.asFile.get()
 allprojects {
-    buildDir = (parent?.buildDir ?: rootFolder).resolve(name)
+    layout.buildDirectory.fileValue((parent?.layout?.buildDirectory?.asFile?.orNull ?: rootFolder).resolve(name))
 }
 
 val rrGroup by extra { "com.runicrealms.plugin" }
