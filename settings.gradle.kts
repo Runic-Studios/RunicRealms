@@ -1,10 +1,13 @@
 rootProject.name = "RunicRealms"
 
 pluginManagement {
+    val kotlinVersion: String by settings
+    val shadowVersion: String by settings
+
+    // Define plugin versions for all subprojects.
     plugins {
-        kotlin("jvm") version "1.9.20"
-        kotlin("kapt") version "1.9.20"
-        id("com.github.johnrengelman.shadow") version "8.1.1"
+        kotlin("jvm") version kotlinVersion
+        id("com.github.johnrengelman.shadow") version shadowVersion
     }
 }
 
@@ -75,8 +78,6 @@ include("Projects:PvP")
 findProject(":Projects:PvP")?.name = "PvP"
 include("Projects:Quests")
 findProject(":Projects:Quests")?.name = "Quests"
-include("Projects:Reputation")
-findProject(":Projects:Reputation")?.name = "Reputation"
 include("Projects:Restart")
 findProject(":Projects:Restart")?.name = "Restart"
 include("Projects:Database")
