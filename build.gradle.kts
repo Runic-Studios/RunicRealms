@@ -33,10 +33,6 @@ subprojects {
             .languageVersion
             .set(JavaLanguageVersion.of(jvmVersion as String))
 
-        // Important tasks to register for gradle kotlin DSL
-        tasks.register("wrapper")
-        tasks.register("prepareKotlinBuildScriptModel")
-
         // Set subproject version/group
         version = rrVersion!!
         group = rrGroup
