@@ -18,3 +18,23 @@ cd RunicRealms
 ```
 
 ### Submodules
+This project uses Git submodules. After cloning, initialize and update the submodules:
+``bash
+git submodule init
+git submodule update
+```
+
+### Building with Gradle
+To build the project, use the following Gradle command:
+```bash
+./gradlew build
+```
+This will compile the project and generate the necessary files to run the plugins on your Minecraft server.
+
+## External Libraries
+"Runic Realms" leverages several external libraries to function seamlessly. Ensure these are included in your build path:
+
+[ModelEngine]: Description and usage
+MythicMobs: Description and usage
+
+## Con
