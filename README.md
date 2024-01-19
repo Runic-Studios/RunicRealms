@@ -31,10 +31,14 @@ To build the project, use the following Gradle command:
 ```
 This will compile the project and generate the necessary files to run the plugins on your Minecraft server.
 
-## External Libraries
+### External Libraries
 "Runic Realms" leverages several external libraries to function seamlessly. Ensure these are included in your build path:
 
-[ModelEngine]: Description and usage
-MythicMobs: Description and usage
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Con
+## Acknowledgments
+We at Runic Realms would like to acknowledge contributors Destiny, BoboBalloon, Excel, and H1dden
+
+ModelEngine: Description and usage
+MythicMobs: Description and usage
