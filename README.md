@@ -19,7 +19,7 @@ cd RunicRealms
 
 ### Submodules
 This project uses Git submodules. After cloning, initialize and update the submodules:
-``bash
+```bash
 git submodule init
 git submodule update
 ```
