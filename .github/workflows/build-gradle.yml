@@ -1,35 +1,35 @@
-name: "Build Gradle 2.1"
+name: "Build Gradle 2.1.1"
 on:
   push:
-    branches: [ "2.1" ]
+    branches: [ "2.1.1" ]
   pull_request:
-    branches: [ "2.1" ]
+    branches: [ "2.1.1" ]
 permissions:
   contents: read
 jobs:
   gradle:
-    runs-on: [ubuntu-latest]
+    runs-on: [ ubuntu-latest ]
     steps:
-    - name: Checkout Repository and Clone Submodules
-      uses: actions/checkout@v4
-      with:
-        ref: "2.1"
-        submodules: recursive
-        token: "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" # Read-only token owned by RunicRealmsGithub for the whole org
-    - name: Set up JDK 17 Corretto
-      uses: actions/setup-java@v3
-      with:
-        distribution: corretto
-        java-version: 17
-        cache: gradle
-    - name: Make gradlew executable
-      run: chmod +x ./gradlew
-    - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
-    - name: Execute Gradle build
-      run: ./gradlew build --info
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: plugins-zip
-        path: output/**/*
+      - name: Checkout Repository and Clone Submodules
+        uses: actions/checkout@v4
+        with:
+          ref: "2.1.1"
+          submodules: recursive
+          token: "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" # Read-only token owned by RunicRealmsGithub for the whole org
+      - name: Set up JDK 17 Corretto
+        uses: actions/setup-java@v3
+        with:
+          distribution: corretto
+          java-version: 17
+          cache: gradle
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+      - name: Execute Gradle build
+        run: ./gradlew build --info
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: plugins-zip
+          path: output/**/*
