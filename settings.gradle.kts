@@ -46,7 +46,7 @@ dependencyResolutionManagement {
             library("viaversion", "com.viaversion:viaversion-api:4.9.2")
             library("protocollib", "com.comphenix.protocol:ProtocolLib:5.1.0")
             library("luckperms", "net.luckperms:api:5.4")
-            library("modelengine", "com.ticxo.modelengine:api:R3.2.0")
+            library("modelengine", "com.ticxo.modelengine:ModelEngine:R4.0.4")
         }
     }
 }
